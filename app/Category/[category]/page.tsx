@@ -9,13 +9,13 @@ const prisma = new PrismaClient()
 
 export async function getDetails(name:any) {
   
-  const product = await prisma.categoryPage.findUnique({
+  const details = await prisma.categoryPage.findUnique({
     where: { 
       name: name
     }
   })
     await prisma.$disconnect()
-    return product
+    return details
 }
 
 export const dynamic = "force-dynamic";
