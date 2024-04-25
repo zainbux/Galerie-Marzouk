@@ -18,6 +18,8 @@ export async function getDetails(name:any) {
     return product
 }
 
+export const dynamic = "force-dynamic";
+
 type Props = {
     params: {category:string}
 }

@@ -18,7 +18,7 @@ export async function getProducts(category:any) {
 
 
 type Props = {
-  category: string
+  category?: string
 }
 
 export default async function AllItems(props: Props){

@@ -30,13 +30,13 @@ export default async function Home() {
       <section className="mt-20"><SocialProof/></section>
 
 
-      <section ><CategorySection pageTo={"Category/rugs"} category={"rugs"} btn={"Rugs"} image={"/Designer (7).png"}/></section>
+      <section ><CategorySection pageTo={"category/rugs"} category={"rugs"} btn={"Rugs"} image={"/Designer (7).png"}/></section>
 
-      <section ><CategorySection pageTo={"Category/poufs"} category={"poufs"} btn={"Poufs"} image={"/Designer (10).png"}/></section>
+      <section ><CategorySection pageTo={"category/poufs"} category={"poufs"} btn={"Poufs"} image={"/Designer (10).png"}/></section>
 
-      <section ><CategorySection pageTo={"Category/pillowsblankets"} category={"pillows_blankets"} btn={"Blankets & Pillows"} image={"/Designer (6).png"}/></section>
+      <section ><CategorySection pageTo={"category/pillowsblankets"} category={"pillows_blankets"} btn={"Blankets & Pillows"} image={"/Designer (6).png"}/></section>
 
-      <section ><CategorySection pageTo={"Category/lampsfixtures"} category={"lamps_fixtures"}  btn={"Lamps & Fixtures"} image={"/Designer (12).png"}/></section>
+      <section ><CategorySection pageTo={"category/lampsfixtures"} category={"lamps_fixtures"}  btn={"Lamps & Fixtures"} image={"/Designer (12).png"}/></section>
 
       <ReviewSection reviews={reviews}/>
 

@@ -13,7 +13,7 @@ const ProductionSection = () => {
 
             <div className="mx-auto w-[80vw] h-[250px] my-10 lg:my-0 block lg:w-[20vw] lg:h-full relative rounded-xl overflow-hidden ">
 
-            <Link href={`/Category/rugs`} >
+            <Link href={`/category/rugs`} >
                 <Image
                     src={"/rugg.jpg"}
                     alt="image"
@@ -33,7 +33,7 @@ const ProductionSection = () => {
 
             <div className="mx-auto w-[80vw] h-[250px] my-10 lg:my-0 block lg:w-[20vw] lg:h-full relative rounded-xl overflow-hidden ">
 
-            <Link href={`/Category/poufs`} >
+            <Link href={`/category/poufs`} >
                 <Image
                     src={"/poufs.jpg"}
                     alt="image"
@@ -56,7 +56,7 @@ const ProductionSection = () => {
         <div className='lg:grid lg:grid-cols-2 lg:gap-5'>
 
           <div className="mx-auto w-[80vw] h-[250px] my-10 lg:my-0 lg:w-full lg:col-span-2 block relative rounded-xl overflow-hidden">
-            <Link href={`/Category/pillowsblankets`} >
+            <Link href={`/category/pillowsblankets`} >
               <Image
                 src={"/cap.JPG"}
                 alt="image"
@@ -74,7 +74,7 @@ const ProductionSection = () => {
           <div className='block lg:flex lg:col-span-2 lg:gap-5'>
 
             <div className="mx-auto w-[80vw] h-[250px] my-10 lg:my-0 lg:w-[20vw] block relative rounded-xl overflow-hidden">
-              <Link href={`/Category/lampsfixtures`} >
+              <Link href={`/category/lampsfixtures`} >
                 <Image
                   src={"/laaamp.jpg"}
                   alt="image"
@@ -90,7 +90,7 @@ const ProductionSection = () => {
             </div>     
 
             <div className="mx-auto w-[80vw] h-[250px] my-10 lg:my-0 lg:w-[20vw] block relative rounded-xl overflow-hidden">
-              <Link href={`/Category/other`} >
+              <Link href={`/category/other`} >
                 <Image
                   src={"/other.jpg"}
                   alt="image"

@@ -22,19 +22,19 @@ const ShopButton = (props: Props) => {
             <NavigationMenuTrigger className="text-md font-semibold text-gray-600 transition duration-100 hover:text-primary">Shop</NavigationMenuTrigger>
             <NavigationMenuContent className="bg-white text--900">
                 <ul className="grid gap-3 p-3 md:w-[300px] ">
-                    <Link href="/Category/rugs"  className="p-1 hover:underline text-md font-semibold text-gray-600 transition duration-100 hover:text-primary">
+                    <Link href="/category/rugs"  className="p-1 hover:underline text-md font-semibold text-gray-600 transition duration-100 hover:text-primary">
                         Rugs
                     </Link>
-                    <Link href="/Category/poufs"  className="p-1 hover:underline text-md font-semibold text-gray-600 transition duration-100 hover:text-primary">
+                    <Link href="/category/poufs"  className="p-1 hover:underline text-md font-semibold text-gray-600 transition duration-100 hover:text-primary">
                         Poufs
                     </Link>
-                    <Link href="/Category/pillowsblankets"  className="p-1 hover:underline text-md font-semibold text-gray-600 transition duration-100 hover:text-primary">
+                    <Link href="/category/pillowsblankets"  className="p-1 hover:underline text-md font-semibold text-gray-600 transition duration-100 hover:text-primary">
                         Pillows & Blankets
                     </Link>
-                    <Link href="/Category/lampsfixtures"  className="p-1 hover:underline text-md font-semibold text-gray-600 transition duration-100 hover:text-primary">
+                    <Link href="/category/lampsfixtures"  className="p-1 hover:underline text-md font-semibold text-gray-600 transition duration-100 hover:text-primary">
                         Lamps & Fixtures
                     </Link>
-                    <Link href="/Category/other"  className="p-1 hover:underline text-md font-semibold text-gray-600 transition duration-100 hover:text-primary">
+                    <Link href="/category/other"  className="p-1 hover:underline text-md font-semibold text-gray-600 transition duration-100 hover:text-primary">
                         Other Decor
                     </Link>
                 </ul>            
