@@ -9,3 +9,12 @@ export async function getReviews() {
   return reviews
 }
 
+export async function getDetails(name:any) {
+  const details = await prisma.categoryPage.findUnique({
+    where: { 
+      name: name
+    }
+  })
+    await prisma.$disconnect()
+    return details
+}
