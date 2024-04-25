@@ -22,7 +22,7 @@ type Props = {
     params: {category:string}
 }
 
-export default async function Page({ params }: Props)  {
+export default async function page({ params }: Props)  {
 
   const name = params.category
 
