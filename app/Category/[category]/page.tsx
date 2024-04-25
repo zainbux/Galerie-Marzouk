@@ -7,7 +7,7 @@ import { PrismaClient } from '@prisma/client';
 const prisma = new PrismaClient()
 
 
-export async function getPage(name:any) {
+export async function getDetails(name:any) {
   
   const product = await prisma.categoryPage.findUnique({
     where: { 
@@ -22,11 +22,11 @@ type Props = {
     params: {category:string}
 }
 
-export default async function Page  ({ params }: Props)  {
+export default async function Page({ params }: Props)  {
 
   const name = params.category
 
-  const details = await getPage(name);
+  const details = await getDetails(name);
 
   if (!details) {
     return <div>No product found</div>
