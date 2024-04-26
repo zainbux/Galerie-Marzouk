@@ -7,7 +7,7 @@ const Email = (props: Props) => {
     <div className='block lg:flex items-center justify-center w-full bg-orange-400 px-10 lg:px-44 py-10 '>
 
         <div className='py-10  text-white'>
-        {/* <h1 className='font-bold text-3xl md:text-5xl text-center my-10 mx-10'>How does 20% off your first order sound?</h1> */}
+        <h1 className='font-bold text-3xl md:text-5xl text-center my-10 mx-10'>How does 20% off your first order sound?</h1>
 
             <h1 className='font-semibold mx-16 text-center text-2xl'>
             Signup to join the Berbers Bazaar and gain early access to product releases and exclusive discounts ❤️

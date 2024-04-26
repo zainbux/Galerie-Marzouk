@@ -9,6 +9,7 @@ const Footer = () => {
   return (
     <div className='w-full mt-20'>
 
+      <Email/>
       
       <div className='hidden bg-gray-900 justify-evenly p-10 md:px-48 md:flex'>
 

@@ -21,7 +21,7 @@ type Props = {
     params: {category:string}
 }
 
-export default async function page({ params }: Props)  {
+export default async function home({ params }: Props)  {
 
   const name = params.category
 
