@@ -9,7 +9,7 @@ export async function getReviews() {
   return reviews
 }
 
-async function getDetails(name:any) {
+export async function getDetails(name:any) {
   
   const product = await prisma.categoryPage.findUnique({
     where: { 

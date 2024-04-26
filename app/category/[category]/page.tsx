@@ -15,17 +15,13 @@ export default async function home({ params }: Props)  {
 
   const name = params.category
 
-  const details = await getDetails(name);
 
-  if (!details) {
-    return <div>No product found</div>
-  }
+
 
   return (
     <div className='mt-10 mx-20'>
       
-      <CategoryHeader header={details.title} CategoryImage={details.images} description={details.description}/>
-      <AllItems category={details.name}/>
+      h1
 
     </div>
   )
