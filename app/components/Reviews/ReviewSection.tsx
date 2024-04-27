@@ -1,7 +1,6 @@
 'use client'
 
 import React from 'react';
-import { reviews } from '@/app/constants';
 import ReviewCard from './ReviewCard';
 import Autoplay from "embla-carousel-autoplay"
 
@@ -21,7 +20,7 @@ import { getReviews } from '@/lib/api';
 
   export default async function ReviewSection(props:Props) {
 
-    const review = await getReviews();
+    const reviews = await getReviews();
 
   // const plugin = React.useRef(
   //   Autoplay({ delay: 1000, stopOnInteraction: false })
@@ -50,7 +49,6 @@ import { getReviews } from '@/lib/api';
                     productName={review.productName}
                     customerName={review.customerName}
                     description={review.description}
-                    image={review.image}
                 />
             </CarouselItem>
             ))}
