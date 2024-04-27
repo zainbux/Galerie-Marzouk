@@ -1,27 +1,14 @@
 import ImageGallery from '@/app/components/ImageGallery'
 import React from 'react'
-import { AboutUs, FollowUs, OurServices, Products } from '@/app/constants'
 import { DiameterIcon, RulerIcon, Truck } from 'lucide-react'
 import { calculateOriginalPrice, feetToCentimeters } from '@/app/utils/utils'
 import { Details } from './Details'
 import CategoryCarousel from '@/app/components/CategorySection/CategoryCarousel'
 import FAQ from '@/app/components/FAQ'
-import { PrismaClient } from '@prisma/client'
 import AddToBag from '@/app/components/AddToBag'
 import CheckoutNow from '@/app/components/CheckoutNow'
+import { getProduct } from '@/lib/api'
 
-const prisma = new PrismaClient()
-
-
-async function getProduct(id:any) {
-  const product = await prisma.products.findUnique({
-    where: {
-      id: Number(id)
-    }
-  })
-    await prisma.$disconnect()
-    return product
-}
 
 export const dynamic = "force-dynamic";
 

@@ -1,20 +1,7 @@
 import React from 'react'
-import { Products } from '../constants'
 import ProductCard from '../components/ProductCard'
-import { PrismaClient } from '@prisma/client'
+import { getProducts } from '@/lib/api'
 
-const prisma = new PrismaClient()
-
-async function getProducts(category:any) {
-  const products = await prisma.products.findMany({
-    where: {
-      category: category
-    }
-  })
-    await prisma.$disconnect()
-    return products
-    
-}
 
 
 type Props = {

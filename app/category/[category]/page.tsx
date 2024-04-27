@@ -2,19 +2,7 @@ import React from 'react';
 import CategoryHeader from './CategoryHeader';
 import AllItems from '@/app/AllItems/AllItems';
 import { PrismaClient } from '@prisma/client';
-
-const prisma = new PrismaClient()
-
-async function getDetails(name:any) {
-  
-  const product = await prisma.categoryPage.findUnique({
-    where: { 
-      name: name
-    }
-  })
-    await prisma.$disconnect()
-    return product
-}
+import { getDetails } from '@/lib/api';
 
 
 type Props = {

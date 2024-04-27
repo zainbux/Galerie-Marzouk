@@ -7,20 +7,8 @@ import {
 } from "@/components/ui/carousel"
 
 import ProductCard from "../ProductCard"
-import { PrismaClient } from '@prisma/client'
+import { getCategoryProducts } from "@/lib/api";
 
-const prisma = new PrismaClient()
-
-export async function getProducts(category:any) {
-  const products = await prisma.products.findMany({
-    where: {
-      category: category
-    }
-  })
-    await prisma.$disconnect()
-    return products
-    
-}
 
 type Props = {
   category?:string,
@@ -28,7 +16,7 @@ type Props = {
 
 export default async function CategoryCarousel ({ category }:Props) {
 
-  const Products = await getProducts(category);
+  const Products = await getCategoryProducts(category);
   
 
   return (
