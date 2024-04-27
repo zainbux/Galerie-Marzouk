@@ -12,17 +12,20 @@ import {
     CarouselNext,
     CarouselPrevious,
   } from "@/components/ui/carousel"
+import { getReviews } from '@/lib/api';
   
   type Props = {
     reviews:any
   }
 
 
-  export default function ReviewSection(props:Props) {
+  export default async function ReviewSection(props:Props) {
 
-  const plugin = React.useRef(
-    Autoplay({ delay: 1000, stopOnInteraction: false })
-  )
+    const review = await getReviews();
+
+  // const plugin = React.useRef(
+  //   Autoplay({ delay: 1000, stopOnInteraction: false })
+  // )
 
   return (
     <div className=" justify-center my-40 mx-20 md:mx-36">      
@@ -31,9 +34,9 @@ import {
         
         <Carousel className="w-full md:w-[80vw]"
         
-        plugins={[plugin.current]}
-        onMouseEnter={plugin.current.stop}
-        onMouseLeave={plugin.current.reset}
+        // plugins={[plugin.current]}
+        // onMouseEnter={plugin.current.stop}
+        // onMouseLeave={plugin.current.reset}
         
         >
         <CarouselContent className="-ml-1">

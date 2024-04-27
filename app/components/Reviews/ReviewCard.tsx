@@ -9,7 +9,7 @@ type Props = {
     productName:string,
     date:string,
     description:string,
-    image:string
+    image?:string
 
 }
 
