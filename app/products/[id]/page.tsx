@@ -13,7 +13,7 @@ import CheckoutNow from '@/app/components/CheckoutNow'
 const prisma = new PrismaClient()
 
 
-export async function getProduct(id:any) {
+async function getProduct(id:any) {
   const product = await prisma.products.findUnique({
     where: {
       id: Number(id)
