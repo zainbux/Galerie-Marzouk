@@ -8,14 +8,3 @@ export async function getReviews() {
   await prisma.$disconnect()
   return reviews
 }
-
-export async function getDetails(name:any) {
-  
-  const product = await prisma.categoryPage.findUnique({
-    where: { 
-      name: name
-    }
-  })
-    await prisma.$disconnect()
-    return product
-}
