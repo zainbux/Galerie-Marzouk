@@ -6,7 +6,7 @@ import { calculateOriginalPrice, feetToCentimeters } from '../utils/utils'
 
 type Props = {
 
-    id:number,
+    id:string,
     soldOut:boolean,
     name:string,    
     ThumbnailImage:string,
