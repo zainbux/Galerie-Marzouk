@@ -4,6 +4,7 @@ import { AboutUs, OurServices, FollowUs } from '@/app/constants'
 import Link from 'next/link'
 import { HiArrowNarrowRight } from 'react-icons/hi'
 import MobileFooter from './MobileFooter'
+import { PhoneIncomingIcon } from 'lucide-react'
 
 const Footer = () => {
   return (
@@ -56,6 +57,7 @@ const Footer = () => {
               
         </nav>
 
+
         
 
 
@@ -66,7 +68,10 @@ const Footer = () => {
       </div>
 
 
+
+
       <div className='py-4 flex flex-col md:flex-row items-center justify-center gap-2 md:gap-5 text-xs bg-gray-900'>
+
           <hr/>
           <p className='text-white'>@2024 Berbers Bazaar Inc. All rights reserved</p>
           <div className='flex gap-5'>

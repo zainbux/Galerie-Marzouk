@@ -77,7 +77,7 @@ export default async function page({ params }: Props) {
             <AddToBag
               id={product.id}
               currency="CAD"
-              description={product.description}
+              highlight={product.highlight}
               image={product.images[0]}
               name={product.title}
               price={product.price}

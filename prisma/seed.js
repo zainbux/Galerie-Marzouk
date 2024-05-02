@@ -1,163 +1,25 @@
-const { PrismaClient } = require('@prisma/client')
+const { PrismaClient } = require('@prisma/client');
 const prisma = new PrismaClient();
 
 async function seedProducts() {
   try {
-
-      await prisma.products.create({
-        data: {
-            category: "Rugs", 
-            title: "Multi-White Base",
-            description:"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Dignissim sodales ut eu sem. Odio ut sem nulla pharetra diam sit amet nisl suscipit. Id donec ultrices tincidunt arcu non. Non quam lacus suspendisse faucibus interdum posuere lorem ipsum. Mi quis hendrerit dolor magna. Cras tincidunt lobortis feugiat vivamus at. Commodo odio aenean sed adipiscing diam. Dictum fusce ut placerat orci nulla pellentesque dignissim. Nulla aliquet enim tortor at auctor urna nunc id cursus. Leo vel orci porta non pulvinar neque laoreet. Pretium quam vulputate dignissim suspendisse in est ante. Molestie ac feugiat sed lectus vestibulum mattis ullamcorper. Rhoncus urna neque viverra justo nec. Mauris pharetra et ultrices neque ornare aenean euismod elementum nisi. Semper auctor neque vitae tempus. Enim nec dui nunc mattis enim. Nunc sed velit dignissim sodales ut. Tempor orci dapibus ultrices in iaculis nunc sed.",
-            highlight: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Dignissim sodales ut eu sem. Odio ut sem nulla pharetra diam sit amet nisl suscipit. Id donec ultrices tincidunt arcu non. Non quam lacus suspendisse faucibus interdum posuere lorem ipsum. Mi quis hendrerit dolor magna. Cras tincidunt lobortis feugiat vivamus at. Commodo odio aenean sed adipiscing diam." , 
-            price: 1685,
-            discount: 10, 
-            length: 5.4,
-            width: 7.4,
-            soldOut: true,
-            priceId:"FDSAFD",
-            ThumbnailImage: "/rug1.jpg",
-            images: [
-                "/Designer (1).png",
-                "/Designer (4).png",
-                "/Designer (5).png",
-                "/Designer (6).png"
-            ]
-        },
-      });
-
-      
-      await prisma.products.create({
-        data: {
-            category: "Rugs", 
-            title: "Multi-White Base",
-            description:"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Dignissim sodales ut eu sem. Odio ut sem nulla pharetra diam sit amet nisl suscipit. Id donec ultrices tincidunt arcu non. Non quam lacus suspendisse faucibus interdum posuere lorem ipsum. Mi quis hendrerit dolor magna. Cras tincidunt lobortis feugiat vivamus at. Commodo odio aenean sed adipiscing diam. Dictum fusce ut placerat orci nulla pellentesque dignissim. Nulla aliquet enim tortor at auctor urna nunc id cursus. Leo vel orci porta non pulvinar neque laoreet. Pretium quam vulputate dignissim suspendisse in est ante. Molestie ac feugiat sed lectus vestibulum mattis ullamcorper. Rhoncus urna neque viverra justo nec. Mauris pharetra et ultrices neque ornare aenean euismod elementum nisi. Semper auctor neque vitae tempus. Enim nec dui nunc mattis enim. Nunc sed velit dignissim sodales ut. Tempor orci dapibus ultrices in iaculis nunc sed.",
-            highlight: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Dignissim sodales ut eu sem. Odio ut sem nulla pharetra diam sit amet nisl suscipit. Id donec ultrices tincidunt arcu non. Non quam lacus suspendisse faucibus interdum posuere lorem ipsum. Mi quis hendrerit dolor magna. Cras tincidunt lobortis feugiat vivamus at. Commodo odio aenean sed adipiscing diam." , 
-            price: 1685,
-            discount: 10, 
-            length: 5.4,
-            width: 7.4,
-            soldOut: true,
-            priceId:"FDSAFD",
-
-            ThumbnailImage: "/rug1.jpg",
-            images: [
-                "/Designer (1).png",
-                "/Designer (4).png",
-                "/Designer (5).png",
-                "/Designer (6).png"
-            ]
-        },
-      });
-
-      
-      await prisma.products.create({
-        data: {
-            category: "Rugs", 
-            title: "Multi-White Base",
-            description:"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Dignissim sodales ut eu sem. Odio ut sem nulla pharetra diam sit amet nisl suscipit. Id donec ultrices tincidunt arcu non. Non quam lacus suspendisse faucibus interdum posuere lorem ipsum. Mi quis hendrerit dolor magna. Cras tincidunt lobortis feugiat vivamus at. Commodo odio aenean sed adipiscing diam. Dictum fusce ut placerat orci nulla pellentesque dignissim. Nulla aliquet enim tortor at auctor urna nunc id cursus. Leo vel orci porta non pulvinar neque laoreet. Pretium quam vulputate dignissim suspendisse in est ante. Molestie ac feugiat sed lectus vestibulum mattis ullamcorper. Rhoncus urna neque viverra justo nec. Mauris pharetra et ultrices neque ornare aenean euismod elementum nisi. Semper auctor neque vitae tempus. Enim nec dui nunc mattis enim. Nunc sed velit dignissim sodales ut. Tempor orci dapibus ultrices in iaculis nunc sed.",
-            highlight: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Dignissim sodales ut eu sem. Odio ut sem nulla pharetra diam sit amet nisl suscipit. Id donec ultrices tincidunt arcu non. Non quam lacus suspendisse faucibus interdum posuere lorem ipsum. Mi quis hendrerit dolor magna. Cras tincidunt lobortis feugiat vivamus at. Commodo odio aenean sed adipiscing diam." , 
-            price: 1685,
-            discount: 10, 
-            length: 5.4,
-            width: 7.4,
-            soldOut: true,
-            priceId:"FDSAFD",
-
-            ThumbnailImage: "/rug1.jpg",
-            images: [
-                "/Designer (1).png",
-                "/Designer (4).png",
-                "/Designer (5).png",
-                "/Designer (6).png"
-            ]
-        },
-      });
-
-      
-      await prisma.products.create({
-        data: {
-            category: "Rugs", 
-            title: "Multi-White Base",
-            description:"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Dignissim sodales ut eu sem. Odio ut sem nulla pharetra diam sit amet nisl suscipit. Id donec ultrices tincidunt arcu non. Non quam lacus suspendisse faucibus interdum posuere lorem ipsum. Mi quis hendrerit dolor magna. Cras tincidunt lobortis feugiat vivamus at. Commodo odio aenean sed adipiscing diam. Dictum fusce ut placerat orci nulla pellentesque dignissim. Nulla aliquet enim tortor at auctor urna nunc id cursus. Leo vel orci porta non pulvinar neque laoreet. Pretium quam vulputate dignissim suspendisse in est ante. Molestie ac feugiat sed lectus vestibulum mattis ullamcorper. Rhoncus urna neque viverra justo nec. Mauris pharetra et ultrices neque ornare aenean euismod elementum nisi. Semper auctor neque vitae tempus. Enim nec dui nunc mattis enim. Nunc sed velit dignissim sodales ut. Tempor orci dapibus ultrices in iaculis nunc sed.",
-            highlight: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Dignissim sodales ut eu sem. Odio ut sem nulla pharetra diam sit amet nisl suscipit. Id donec ultrices tincidunt arcu non. Non quam lacus suspendisse faucibus interdum posuere lorem ipsum. Mi quis hendrerit dolor magna. Cras tincidunt lobortis feugiat vivamus at. Commodo odio aenean sed adipiscing diam." , 
-            price: 1685,
-            discount: 10, 
-            length: 5.4,
-            width: 7.4,
-            soldOut: true,
-            priceId:"FDSAFD",
-
-            ThumbnailImage: "/rug1.jpg",
-            images: [
-                "/Designer (1).png",
-                "/Designer (4).png",
-                "/Designer (5).png",
-                "/Designer (6).png"
-            ]
-        },
-      });
-
-      
-      await prisma.products.create({
-        data: {
-            category: "Rugs", 
-            title: "Multi-White Base",
-            description:"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Dignissim sodales ut eu sem. Odio ut sem nulla pharetra diam sit amet nisl suscipit. Id donec ultrices tincidunt arcu non. Non quam lacus suspendisse faucibus interdum posuere lorem ipsum. Mi quis hendrerit dolor magna. Cras tincidunt lobortis feugiat vivamus at. Commodo odio aenean sed adipiscing diam. Dictum fusce ut placerat orci nulla pellentesque dignissim. Nulla aliquet enim tortor at auctor urna nunc id cursus. Leo vel orci porta non pulvinar neque laoreet. Pretium quam vulputate dignissim suspendisse in est ante. Molestie ac feugiat sed lectus vestibulum mattis ullamcorper. Rhoncus urna neque viverra justo nec. Mauris pharetra et ultrices neque ornare aenean euismod elementum nisi. Semper auctor neque vitae tempus. Enim nec dui nunc mattis enim. Nunc sed velit dignissim sodales ut. Tempor orci dapibus ultrices in iaculis nunc sed.",
-            highlight: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Dignissim sodales ut eu sem. Odio ut sem nulla pharetra diam sit amet nisl suscipit. Id donec ultrices tincidunt arcu non. Non quam lacus suspendisse faucibus interdum posuere lorem ipsum. Mi quis hendrerit dolor magna. Cras tincidunt lobortis feugiat vivamus at. Commodo odio aenean sed adipiscing diam." , 
-            price: 1685,
-            discount: 10, 
-            length: 5.4,
-            width: 7.4,
-            soldOut: true,
-            priceId:"FDSAFD",
-
-            ThumbnailImage: "/rug1.jpg",
-            images: [
-                "/Designer (1).png",
-                "/Designer (4).png",
-                "/Designer (5).png",
-                "/Designer (6).png"
-            ]
-        },
-      });
-
-      
-      await prisma.products.create({
-        data: {
-            category: "Rugs", 
-            title: "Multi-White Base",
-            description:"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Dignissim sodales ut eu sem. Odio ut sem nulla pharetra diam sit amet nisl suscipit. Id donec ultrices tincidunt arcu non. Non quam lacus suspendisse faucibus interdum posuere lorem ipsum. Mi quis hendrerit dolor magna. Cras tincidunt lobortis feugiat vivamus at. Commodo odio aenean sed adipiscing diam. Dictum fusce ut placerat orci nulla pellentesque dignissim. Nulla aliquet enim tortor at auctor urna nunc id cursus. Leo vel orci porta non pulvinar neque laoreet. Pretium quam vulputate dignissim suspendisse in est ante. Molestie ac feugiat sed lectus vestibulum mattis ullamcorper. Rhoncus urna neque viverra justo nec. Mauris pharetra et ultrices neque ornare aenean euismod elementum nisi. Semper auctor neque vitae tempus. Enim nec dui nunc mattis enim. Nunc sed velit dignissim sodales ut. Tempor orci dapibus ultrices in iaculis nunc sed.",
-            highlight: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Dignissim sodales ut eu sem. Odio ut sem nulla pharetra diam sit amet nisl suscipit. Id donec ultrices tincidunt arcu non. Non quam lacus suspendisse faucibus interdum posuere lorem ipsum. Mi quis hendrerit dolor magna. Cras tincidunt lobortis feugiat vivamus at. Commodo odio aenean sed adipiscing diam." , 
-            price: 1685,
-            discount: 10, 
-            length: 5.4,
-            width: 7.4,
-            soldOut: true,
-            ThumbnailImage: "/rug1.jpg",
-            priceId:"FDSAFD",
-            images: [
-                "/Designer (1).png",
-                "/Designer (4).png",
-                "/Designer (5).png",
-                "/Designer (6).png"
-            ]
-        },
-      });
-      
-      // Similarly for the remaining items...
-      
-      await prisma.categoryPage.create({
-        data: {
-          name: "Rugs",
-          description: "Moroccan rugs stand out for their impeccable quality, woven with locally sourced materials like wool, cotton, and recycled fabric, each rug telling a story of its origins. Crafted by Berber artisans who preserve ancestral techniques, these rugs are more than decor—they're a testament to tradition, creativity, and strong familial bonds. With vibrant colors, intricate patterns, and symbolic motifs, Moroccan rugs not only beautify spaces but also carry the rich heritage and narratives of the Berber tribes.",
-          images: "/rugg.jpg"
-        
-        },
-      });
-
-
-
+    await prisma.products.create({
+      data: {
+        title: "",
+        description: "",
+        price: 899,
+        created_at: new Date(),
+        category: "rug",
+        highlight: "Immerse yourself in the rich cultural heritage of Moroccan craftsmanship with our exquisite handwoven rug. Made with 100% natural wool, its captivating design features intricate blue patterns against a pristine white background, evoking a sense of timeless elegance and sophistication. Woven decades ago and passed down through generations, this rug carries tales of tradition and kinship, waiting to become a cherished heirloom in your home. Elevate your décor with its unique blend of authenticity and artistry, while supporting over 1000 skilled craftswomen and making a sustainable choice for your space. As both a stunning addition to your home and a wise investment for the future, this rug embodies beauty, tradition, and value in every stitch.",
+        discount: 10,
+        length: 9,
+        width: 9,
+        soldOut: false,
+        ThumbnailImage: "",
+        images: [],
+        priceId: "jfsdajkfds"
+      },
+    });
   } catch (error) {
     console.error(error);
   } finally {
@@ -165,4 +27,148 @@ async function seedProducts() {
   }
 }
 
-seedProducts();
+async function seedRug(name, thumbnailImage, images) {
+  try {
+    await prisma.products.create({
+      data: {
+        title: name,
+        description: "",
+        price: 190,
+        created_at: new Date(),
+        category: "poufs",
+        highlight: "Indulge in the exquisite craftsmanship of our Moroccan pom pom blanket, meticulously woven and hand-colored to perfection. Ideal for adding a cozy touch to your home, whether draped over your bed or sofa. This enchanting cover promises to elevate the ambiance of your bedrooms and nurseries with its irresistibly soft and warm textures. These Moroccan pom pom throws are a testament to the Berber artisans' dedication from Marrakesh. Crafted with care using traditional loom techniques, they embody the essence of Berber craftsmanship. A delightful present for your cherished ones! Crafted from 100% handspun cotton and meticulously hand-loomed, each piece is a testament to the skilled hands of Marrakesh artisans.",
+        discount: 15,
+        length: 8.5,
+        width: 6.5,
+        soldOut: false,
+        ThumbnailImage: thumbnailImage,
+        images: images,
+        priceId: "temp"
+      },
+    });
+    console.log(`"${name}" rug seeded successfully.`);
+  } catch (error) {
+    console.error(`Error seeding "${name}" rug:`, error);
+  }
+}
+
+async function seedReview(productName, customerName, date, description, images) {
+  try {
+    await prisma.review.create({
+      data: {
+        productName: productName,
+        customerName: customerName,
+        date: date,
+        description: description,
+        images: images,
+      },
+    });
+    console.log(`Review for "${productName}" seeded successfully.`);
+  } catch (error) {
+    console.error(`Error seeding review for "${productName}":`, error);
+  }
+}
+
+// Seed reviews
+seedReview(
+  "Midnight Mosaic",
+  "David Tran",
+  "2023-06-15",
+  "Really nice, and super thick and comfy",
+  []
+);
+
+seedReview(
+  "Emerald Elegance",
+  "Fatima Ahmed",
+  "2023-09-28",
+  "In love with this rug the  green tones match my walls and bring come togather  well in my home.",
+  []
+);
+
+seedReview(
+  "Earthy Tones Tapestry",
+  "Konan Bux",
+  "2023-11-12",
+  "Adds warmth and character.",
+  []
+);
+
+seedReview(
+  "Moroccan Nightscape",
+  "Aisha Khan",
+  "2024-02-19",
+  "Nice bright  colors and intricate patterns i made it the centerpiece in myt my room.",
+  []
+);
+
+seedReview(
+  "Sapphire Skies",
+  "Emily Taylor",
+  "2023-08-07",
+  "I Like having a piece of the sky in my living room.",
+  []
+);
+
+seedReview(
+  "Vintage Vineyard",
+  "Miguel Rodriguez",
+  "2024-01-03",
+  "Very Large and warm",
+  []
+);
+
+seedReview(
+  "Coral Coastline",
+  "Jessica Lee",
+  "2023-10-20",
+  "Reminds me of lazy days by the ocean! Coral tones bring a pop of color to my neutral decor.",
+  []
+);
+
+seedReview(
+  "Desert Dreamland",
+  "Ahmed Al-Mansoori",
+  "2023-07-05",
+  "Warm hues and intricate patterns, super nice",
+  []
+);
+
+seedReview(
+  "Azure Arabesque",
+  "Sarah Mylarlend",
+  "2024-03-15",
+  "Breathtaking azure blue! Arabesque design adds sophistication to my space.",
+  []
+);
+
+seedReview(
+  "Orchid Oasis",
+  "Linda Nguyen",
+  "2023-12-10",
+  "So pretty, it has a nice sheen and makes my room so bright",
+  []
+);
+
+seedReview(
+  "Rustic Retreat",
+  "Laura Vanderkemp",
+  "2023-09-03",
+  "I love this for my living space, my dog has claimed it as his new fav spot haha",
+  []
+);
+
+seedReview(
+  "Coastal Charm",
+  "Olivia J Anderson",
+  "2024-04-18",
+  "OMG the blue hues and the patterns are so pretty, and to thing it was handmade.",
+  []
+);
+
+
+
+
+
+
+

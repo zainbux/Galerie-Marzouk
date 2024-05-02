@@ -16,7 +16,7 @@ type Props = {
 const ReviewCard = (props:Props) => {
 
   return (
-    <div className=' bg-orange-100 text-slate-600 flex-col justify-center p-5 w-full lg:w-[300px] lg:h-[370px] rounded-xl'>
+    <div className=' bg-orange-100 text-slate-600 flex-col justify-center p-5 w-full lg:w-[300px] lg:h-[270px] rounded-xl'>
         <div className='flex justify-between space-x-5'>
             <div>
                 <h1 className='font-bold'>{props.customerName}</h1>
@@ -44,14 +44,7 @@ const ReviewCard = (props:Props) => {
             {props.description}
         </div>
 
-        <div className='h-20 w-20 relative' >
-            <Image
-                src={`${props.image}`}
-                alt="image"
-                fill={true}
-                className='object-cover rounded-lg'
-            />
-        </div>
+
 
 
 

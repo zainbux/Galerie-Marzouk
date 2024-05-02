@@ -4,9 +4,9 @@ import { Button } from "@/components/ui/button";
 import { useShoppingCart } from "use-shopping-cart";
 
 export interface ProductCart {
-  id: number; // Add this line
+  id: string; // Add this line
   name: string;
-  description: string;
+  highlight: string;
   price: number;
   currency: string;
   image: any;
@@ -15,7 +15,7 @@ export interface ProductCart {
 
 export default function AddToBag({
   currency,
-  description,
+  highlight,
   image,
   name,
   price,
@@ -26,7 +26,7 @@ export default function AddToBag({
 
   const product = {
     name: name,
-    description: description,
+    description: highlight,
     price: price,
     currency: currency,
     image: image,

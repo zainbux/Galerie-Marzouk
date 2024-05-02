@@ -34,7 +34,7 @@ export async function getProducts(category:any) {
 export async function getProduct(id:any) {
   const product = await prisma.products.findUnique({
     where: {
-      id: Number(id)
+      id: String(id)
     }
   })
     await prisma.$disconnect()

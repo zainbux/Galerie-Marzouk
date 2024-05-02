@@ -40,9 +40,18 @@ export const Details = (props: Props) => {
                 </CardHeader>
 
                 <CardContent className="space-y-2">
-                  <div className="space-y-1">
+                  <div className="space-y-3">
                     <p>
-                      {props.description}
+                    🌿 Handcrafted with Passion: Made from 100% natural wool with love, each stitch reflects our artisans' dedication, offering a piece brimming with warmth, character, and history.
+                    </p>
+                    <p>
+                    🏡 Elevate Your Space: Infuse elegance and authenticity with this rug, effortlessly enhancing any room's aesthetic and ambiance with its harmonious blend of white and blue patterns.
+                    </p>
+                    <p>
+                    💼 Empowering Artisans: By choosing this rug, you support over 1000 skilled craftswomen, preserving heritage and livelihoods for generations.
+                    </p>
+                    <p>
+                    📈 Investment & Sustainability: Beyond beauty, this rug is a valuable investment, increasing in worth over time. Crafted sustainably, it contributes to an eco-conscious lifestyle.
                     </p>
                   </div>
                 </CardContent>
