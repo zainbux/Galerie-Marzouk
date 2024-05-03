@@ -17,12 +17,12 @@ const ReviewCard = (props:Props) => {
 
   return (
     <div className=' bg-orange-100 text-slate-600 flex-col justify-center p-5 w-full lg:w-[300px] lg:h-[270px] rounded-xl'>
-        <div className='flex justify-between space-x-5'>
+        <div className=' block md:flex justify-between md:space-x-5'>
             <div>
                 <h1 className='font-bold'>{props.customerName}</h1>
                 <p className='text-sm'>{props.date}</p>
             </div>
-            <div className="flex justify-center items-center">
+            <div className="flex md:justify-center md:items-center">
                 <FaStar className='text-blue-500 text-sm'/>
                 <FaStar className='text-blue-500 text-sm'/>
                 <FaStar className='text-blue-500 text-sm'/>
