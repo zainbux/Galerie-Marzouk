@@ -20,10 +20,13 @@ export default async function page({ params }: Props)  {
   }
 
   return (
-    <div className='mt-10 mx-20'>
+    <div className='mt-10 md:mx-20'>
       
       <CategoryHeader header={details.title} CategoryImage={details.images} description={details.description}/>
-      <AllItems category={details.name}/>
+      <div className='mt-10 mx-20'>
+        <AllItems category={details.name}/>
+      </div>
+
 
     </div>
   )
