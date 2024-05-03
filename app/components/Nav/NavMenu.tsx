@@ -16,13 +16,13 @@ import Hamburger from './Hamburger';
 import { Button } from '@/components/ui/button';
 import { ShoppingBag } from 'lucide-react';
 import { usePathname } from 'next/navigation';
+import ShopButton from './ShopButton';
 
 
 const links = [
   { name: "Home", href: "/" },
   { name: "About", href: "/About" },
-  { name: "All Items", href: "/Allitems" },
-  { name: "Contact", href: "/Contact" },
+  { name: "All Items", href: "/AllItems" },
 ];
 
 const NavMenu = () => {
@@ -59,7 +59,10 @@ const NavMenu = () => {
                 )}
                 </div>
             ))}  
-
+ 
+            <div className='flex justify-center text-center items-center text-xl'>
+             <ShopButton/>
+            </div>
             </nav>
         </div>
 
