@@ -7,7 +7,7 @@ import { ProductCart } from "./AddToBag";
 
 export default function CheckoutNow({
   currency,
-  description,
+  highlight,
   image,
   name,
   price,
@@ -22,7 +22,7 @@ export default function CheckoutNow({
 
   const product = {
     name: name,
-    description: description,
+    description: highlight,
     price: price,
     currency: currency,
     image: image,
