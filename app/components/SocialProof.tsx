@@ -8,7 +8,7 @@ const SocialProof = (props: Props) => {
   return (
     <div className="">
         
-        <div className='text-center mx-5'>
+{/*         <div className='text-center mx-5'>
             <h1 className='text-3xl md:text-5xl font-sans font-semibold'>Trusted & Treasuerd</h1>
             <p className='text-gray-400 text- md:text-2xl font-semibold p-1'>Establishing Excellence: Over 2000+ 5-Star Ratings</p>
             <div className="flex justify-center">
@@ -18,7 +18,7 @@ const SocialProof = (props: Props) => {
                 <FaStar className='text-amber-400 text-xl'/>
                 <FaStar className='text-amber-400 text-xl'/>  
             </div>
-        </div>
+        </div> */}
 
         <div className="flex flex-col md:flex-row gap-8 items-center justify-center mt-14 bg-orange-400 py-12 text-white">
 
